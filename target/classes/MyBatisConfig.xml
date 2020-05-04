@@ -15,8 +15,4 @@
             </dataSource>
         </environment>
     </environments>
-    <mappers>
-        <mapper resource="mybatis.xml/TeamMapper.xml"/>
-        <mapper resource="mybatis.xml/PlayerMapper.xml"/>
-    </mappers>
 </configuration>
