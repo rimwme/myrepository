@@ -7,54 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e2104bc-b9bc-4096-b5fb-6a9b284668f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Artist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/60d268c1-9608-4b7f-a4db-a898561e5433.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/60d268c1-9608-4b7f-a4db-a898561e5433.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/persistence/PlayersDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/persistence/TeamsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/rest/PlayersController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/GeneratePlayerJerseyNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/PlayersForTeam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/Teams.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/TeamsMyBatis.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/UpdatePlayerDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/MyBatisConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/PlayerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml/TeamMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/players.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/myBatis/teams.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/playerDetails.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/players.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MyBatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MyBatisConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/entities/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/entities/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/persistence/PlayersDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/persistence/TeamsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/rest/PlayersController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/usecases/PlayersForTeam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/usecases/Teams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/lt/vu/usecases/UpdatePlayerDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis.xml/PlayerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis.xml/TeamMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/MyBatisConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/MyBatisConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/entities/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/entities/Team.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/persistence/PlayersDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/persistence/TeamsDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/rest/PlayersController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/usecases/PlayersForTeam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/usecases/Teams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/lt/vu/usecases/UpdatePlayerDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/mybatis.xml/PlayerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/mybatis.xml/TeamMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/myBatis/players.xhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/myBatis/teams.xhtml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +89,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -282,6 +246,15 @@
                 <item name="JBoss Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PlayerDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PlayerDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@744126d7" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -303,18 +276,44 @@
       <workItem from="1588530012439" duration="1011000" />
       <workItem from="1588583223241" duration="41000" />
       <workItem from="1588583404664" duration="154000" />
-      <workItem from="1588585696228" duration="1927000" />
+      <workItem from="1588585696228" duration="2854000" />
+      <workItem from="1588677026674" duration="4585000" />
     </task>
+    <task id="LOCAL-00001" summary="cleaned up unused files">
+      <created>1588588639103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588588639103</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cleaned up unused files" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned up unused files" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="409" y="157" width="1102" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588523026147">
+    <state x="409" y="157" width="1102" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588679652898">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="409" y="157" width="1102" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588523026147" />
+    <state x="409" y="157" width="1102" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588679652898" />
     <state x="451" y="110" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1588522981626">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
@@ -323,30 +322,34 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="623" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588587252355" />
-    <state x="484" y="33" key="CommitChangelistDialog2" timestamp="1588588598962">
+    <state x="484" y="33" key="CommitChangelistDialog2" timestamp="1588682458080">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="484" y="33" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1588588598962" />
-    <state width="1278" height="187" key="GridCell.Tab.0.bottom" timestamp="1588588562126">
+    <state x="484" y="33" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1588682458080" />
+    <state width="1278" height="329" key="GridCell.Tab.0.bottom" timestamp="1588682427087">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="187" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588588562126" />
-    <state width="1278" height="187" key="GridCell.Tab.0.center" timestamp="1588588562126">
+    <state width="1278" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
+    <state width="1278" height="329" key="GridCell.Tab.0.center" timestamp="1588682427087">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="187" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588588562126" />
-    <state width="1278" height="187" key="GridCell.Tab.0.left" timestamp="1588588562126">
+    <state width="1278" height="329" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
+    <state width="1278" height="329" key="GridCell.Tab.0.left" timestamp="1588682427087">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="187" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588588562126" />
-    <state width="1278" height="187" key="GridCell.Tab.0.right" timestamp="1588588562126">
+    <state width="1278" height="329" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
+    <state width="1278" height="329" key="GridCell.Tab.0.right" timestamp="1588682427087">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="187" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588588562126" />
-    <state width="264" height="571" key="HiddenNamespacesPopup" timestamp="1588530358335">
+    <state width="1278" height="329" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
+    <state width="264" height="571" key="HiddenNamespacesPopup" timestamp="1588679674341">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="264" height="571" key="HiddenNamespacesPopup/0.0.1920.1030@0.0.1920.1030" timestamp="1588530358335" />
+    <state width="264" height="571" key="HiddenNamespacesPopup/0.0.1920.1030@0.0.1920.1030" timestamp="1588679674341" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1588588833787">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1588588833787" />
     <state x="833" y="378" width="404" height="296" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588530208987">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
