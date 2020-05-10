@@ -13,7 +13,8 @@ import java.util.Set;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Song.findAll", query = "select s from Song as s")
+        @NamedQuery(name = "Song.findAll", query = "select s from Song as s"),
+        @NamedQuery(name = "Song.findByAlbum", query = "select s from Song as s where s.album like : album")
 })
 @Table(name = "SONG")
 @Getter
@@ -30,9 +31,6 @@ public class Song implements Serializable {
     @Column(name = "DURATION")
     private Integer duration;
 
-    @Column(name = "RELEASE_DATE")
-    private Date releaseDate;
-
     @ManyToOne
     @JoinColumn(name = "ALBUM_ID")
     private Album album;
@@ -44,5 +42,4 @@ public class Song implements Serializable {
     @ManyToMany
     @JoinTable(name = "SONG_AUTHOR")
     private List<Author> authors = new ArrayList<>();
-    //private Set<Author> authors() { return authors; }
 }

@@ -7,17 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e2104bc-b9bc-4096-b5fb-6a9b284668f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Artist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/persistence/AlbumsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/persistence/ArtistDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/persistence/SongsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/Albums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/AlbumsForArtist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/Artists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/Songs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/vu/usecases/SongsForArtist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/albumDetails.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/artist.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/songDetails.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/60d268c1-9608-4b7f-a4db-a898561e5433.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/60d268c1-9608-4b7f-a4db-a898561e5433.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/vu/entities/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/java-ee-practice/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/target/java-ee-practice/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +101,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="Lombok plugin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\clonetest\src\main\webapp" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="JBoss 18.0.1.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.1.Final" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -250,11 +262,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:PlayerDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:PlayerDB" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@744126d7" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -277,7 +284,12 @@
       <workItem from="1588583223241" duration="41000" />
       <workItem from="1588583404664" duration="154000" />
       <workItem from="1588585696228" duration="2854000" />
-      <workItem from="1588677026674" duration="4585000" />
+      <workItem from="1588677026674" duration="6770000" />
+      <workItem from="1588684572802" duration="827000" />
+      <workItem from="1588833318901" duration="3645000" />
+      <workItem from="1588855480622" duration="15234000" />
+      <workItem from="1588956760771" duration="1411000" />
+      <workItem from="1589099124111" duration="611000" />
     </task>
     <task id="LOCAL-00001" summary="cleaned up unused files">
       <created>1588588639103</created>
@@ -286,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588588639103</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added entities">
+      <created>1588682503695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588682503696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +326,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cleaned up unused files" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned up unused files" />
+    <MESSAGE value="Added entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added entities" />
   </component>
   <component name="WindowStateProjectService">
     <state x="409" y="157" width="1102" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588679652898">
@@ -322,41 +342,53 @@
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="623" y="197" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588587252355" />
-    <state x="484" y="33" key="CommitChangelistDialog2" timestamp="1588682458080">
+    <state x="484" y="33" key="CommitChangelistDialog2" timestamp="1588682500952">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="484" y="33" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1588682458080" />
-    <state width="1278" height="329" key="GridCell.Tab.0.bottom" timestamp="1588682427087">
+    <state x="484" y="33" key="CommitChangelistDialog2/0.0.1920.1030@0.0.1920.1030" timestamp="1588682500952" />
+    <state width="1278" height="184" key="GridCell.Tab.0.bottom" timestamp="1589101666764">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
-    <state width="1278" height="329" key="GridCell.Tab.0.center" timestamp="1588682427087">
+    <state width="1614" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1588881433557" />
+    <state width="1278" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1030@0.0.1920.1030" timestamp="1589101666764" />
+    <state width="1278" height="184" key="GridCell.Tab.0.center" timestamp="1589101666763">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="329" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
-    <state width="1278" height="329" key="GridCell.Tab.0.left" timestamp="1588682427087">
+    <state width="1614" height="260" key="GridCell.Tab.0.center/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1588881433557" />
+    <state width="1278" height="184" key="GridCell.Tab.0.center/0.0.1920.1030@0.0.1920.1030" timestamp="1589101666763" />
+    <state width="1278" height="184" key="GridCell.Tab.0.left" timestamp="1589101666763">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="329" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
-    <state width="1278" height="329" key="GridCell.Tab.0.right" timestamp="1588682427087">
+    <state width="1614" height="260" key="GridCell.Tab.0.left/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1588881433557" />
+    <state width="1278" height="184" key="GridCell.Tab.0.left/0.0.1920.1030@0.0.1920.1030" timestamp="1589101666763" />
+    <state width="1278" height="184" key="GridCell.Tab.0.right" timestamp="1589101666764">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state width="1278" height="329" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1588682427087" />
+    <state width="1614" height="260" key="GridCell.Tab.0.right/0.0.1920.1030/2400.0.2400.1300@2400.0.2400.1300" timestamp="1588881433557" />
+    <state width="1278" height="184" key="GridCell.Tab.0.right/0.0.1920.1030@0.0.1920.1030" timestamp="1589101666764" />
     <state width="264" height="571" key="HiddenNamespacesPopup" timestamp="1588679674341">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state width="264" height="571" key="HiddenNamespacesPopup/0.0.1920.1030@0.0.1920.1030" timestamp="1588679674341" />
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1588588833787">
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2" timestamp="1588682538887">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1588588833787" />
+    <state x="451" y="179" key="Vcs.Push.Dialog.v2/0.0.1920.1030@0.0.1920.1030" timestamp="1588682538887" />
     <state x="833" y="378" width="404" height="296" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1588530208987">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
     <state x="833" y="378" width="404" height="296" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1030@0.0.1920.1030" timestamp="1588530208987" />
-    <state x="606" y="65" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1588529905625">
+    <state x="436" y="82" key="com.intellij.database.dbimport.ImportDialog" timestamp="1588684429305">
       <screen x="0" y="0" width="1920" height="1030" />
     </state>
-    <state x="606" y="65" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588529905625" />
+    <state x="436" y="82" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588684429305" />
+    <state x="606" y="65" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1588684536622">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="606" y="65" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1030@0.0.1920.1030" timestamp="1588684536622" />
+    <state x="246" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1588682754884">
+      <screen x="0" y="0" width="1920" height="1030" />
+    </state>
+    <state x="246" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1030@0.0.1920.1030" timestamp="1588682754884" />
   </component>
 </project>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head/>
+<h:body>
+    <h2> Songs by #{songsForArtist.artist.name} </h2>
+    <ol>
+        <ui:repeat value="#{songsForArtist.artist.songs}" var="song">
+            <li>
+                <h:link value="#{song.name}" outcome="songDetails?songId=#{song.id}" />
+                #{song.duration}s #{song.album.name}
+            </li>
+        </ui:repeat>
+    </ol>
+
+    <h:form>
+        <h:inputText a:placeholder="name" value="#{songsForArtist.songToCreate.name}" required="true" />
+        <h:inputText a:placeholder="duration" value="#{songsForArtist.songToCreate.duration}" required="true" />
+        <h:commandButton value="Add new song" action="#{songsForArtist.createSong}" >
+            <f:param name="artistId" value="#{songsForArtist.artist.id}" />
+        </h:commandButton>
+    </h:form>
+
+    <h2> Albums by #{albumsForArtist.artist.name} </h2>
+    <ol>
+        <ui:repeat value="#{albumsForArtist.artist.albums}" var="album">
+            <li>
+                <h:link value="#{album.name}" outcome="albumDetails?albumId=#{album.id}" />
+            </li>
+        </ui:repeat>
+    </ol>
+
+    <h:form>
+        <h:inputText a:placeholder="name" value="#{albumsForArtist.albumToCreate.name}" required="true" />
+        <h:inputText a:placeholder="release date" value="#{albumsForArtist.albumToCreate.releaseDate}" required="true" />
+        <h:commandButton value="Add new album" action="#{albumsForArtist.createAlbum}" >
+            <f:param name="artistId" value="#{albumsForArtist.artist.id}" />
+        </h:commandButton>
+    </h:form>
+
+</h:body>
+</html>

@@ -27,7 +27,11 @@ public class Album implements Serializable {
     private String name;
 
     @Column(name = "RELEASE_DATE")
-    private Date releaseDate;
+    private Integer releaseDate;
+
+    @ManyToOne
+    @JoinColumn(name = "ARTIST_ID")
+    private Artist artist;
 
     @OneToMany(mappedBy = "album")
     private List<Song> songs = new ArrayList<>();

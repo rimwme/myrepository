@@ -176,28 +176,28 @@
     <collation id="161" parent="2" name="UKRAINIAN_UKRAINE"/>
     <collation id="162" parent="2" name="VIETNAMESE"/>
     <collation id="163" parent="2" name="VIETNAMESE_VIETNAM"/>
-    <sequence id="164" parent="4" name="SYSTEM_SEQUENCE_16966374_8B4D_4C37_B4C6_771F2BC20379">
-      <ObjectId>8</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1</SequenceIdentity>
-      <CacheSize>32</CacheSize>
-      <AutoCreated>1</AutoCreated>
-    </sequence>
-    <sequence id="165" parent="4" name="SYSTEM_SEQUENCE_4E1D3211_2BFB_45FA_B2FB_2ED8B60FB029">
-      <ObjectId>12</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <SequenceIdentity>1</SequenceIdentity>
-      <CacheSize>32</CacheSize>
-      <AutoCreated>1</AutoCreated>
-    </sequence>
-    <sequence id="166" parent="4" name="SYSTEM_SEQUENCE_97B46164_9DB5_4DFB_869C_60ED92DEE200">
+    <sequence id="164" parent="4" name="SYSTEM_SEQUENCE_08F27E51_3CA9_43AD_ADFA_A279F72D0262">
       <ObjectId>4</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>32</CacheSize>
       <AutoCreated>1</AutoCreated>
     </sequence>
-    <sequence id="167" parent="4" name="SYSTEM_SEQUENCE_B2E90B2D_9333_4137_9A94_1603ACB1C3BF">
+    <sequence id="165" parent="4" name="SYSTEM_SEQUENCE_1683576D_2D93_41ED_832A_31C56428D779">
+      <ObjectId>12</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>32</CacheSize>
+      <AutoCreated>1</AutoCreated>
+    </sequence>
+    <sequence id="166" parent="4" name="SYSTEM_SEQUENCE_2AD66D06_345B_473C_9C37_2EFA32BF2FD3">
+      <ObjectId>8</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>32</CacheSize>
+      <AutoCreated>1</AutoCreated>
+    </sequence>
+    <sequence id="167" parent="4" name="SYSTEM_SEQUENCE_D7396BB9_8678_45FA_B97A_B19039C43D67">
       <ObjectId>16</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <SequenceIdentity>1</SequenceIdentity>
@@ -279,54 +279,77 @@
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="184" parent="170" name="DURATION">
+    <column id="184" parent="170" name="LAST_NAME">
       <Position>2</Position>
-      <DataType>INTEGER|0s</DataType>
+      <DataType>VARCHAR(50)|0s</DataType>
     </column>
     <column id="185" parent="170" name="NAME">
       <Position>3</Position>
       <DataType>VARCHAR(50)|0s</DataType>
     </column>
-    <column id="186" parent="170" name="RELEASE_DATE">
-      <Position>4</Position>
-      <DataType>DATE|0s</DataType>
+    <index id="186" parent="170" name="PRIMARY_KEY_73">
+      <ObjectId>13</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <SourceTextLength>71</SourceTextLength>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+      <AutoCreated>1</AutoCreated>
+    </index>
+    <key id="187" parent="170" name="CONSTRAINT_73">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="188" parent="171" name="ID">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="187" parent="170" name="ALBUM_ID">
+    <column id="189" parent="171" name="DURATION">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="190" parent="171" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|0s</DataType>
+    </column>
+    <column id="191" parent="171" name="ALBUM_ID">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="192" parent="171" name="ARTIST_ID">
       <Position>5</Position>
       <DataType>INTEGER|0s</DataType>
     </column>
-    <column id="188" parent="170" name="ARTIST_ID">
-      <Position>6</Position>
-      <DataType>INTEGER|0s</DataType>
-    </column>
-    <index id="189" parent="170" name="PRIMARY_KEY_2">
-      <ObjectId>13</ObjectId>
+    <index id="193" parent="171" name="PRIMARY_KEY_2">
+      <ObjectId>17</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <SourceTextLength>68</SourceTextLength>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
       <AutoCreated>1</AutoCreated>
     </index>
-    <index id="190" parent="170" name="FKNWBDXMKULT500DL0PSBR7UA76_INDEX_2">
-      <ObjectId>15</ObjectId>
+    <index id="194" parent="171" name="FKNWBDXMKULT500DL0PSBR7UA76_INDEX_2">
+      <ObjectId>20</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <SourceTextLength>90</SourceTextLength>
       <ColNames>ALBUM_ID</ColNames>
       <AutoCreated>1</AutoCreated>
     </index>
-    <index id="191" parent="170" name="FKDO7DY3NN7YNBFIAYIDA97S1PU_INDEX_2">
-      <ObjectId>17</ObjectId>
+    <index id="195" parent="171" name="FKDO7DY3NN7YNBFIAYIDA97S1PU_INDEX_2">
+      <ObjectId>22</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <SourceTextLength>91</SourceTextLength>
       <ColNames>ARTIST_ID</ColNames>
       <AutoCreated>1</AutoCreated>
     </index>
-    <key id="192" parent="170" name="CONSTRAINT_2">
+    <key id="196" parent="171" name="CONSTRAINT_2">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="193" parent="170" name="FKNWBDXMKULT500DL0PSBR7UA76">
+    <foreign-key id="197" parent="171" name="FKNWBDXMKULT500DL0PSBR7UA76">
       <ColNames>ALBUM_ID</ColNames>
       <RefTableName>ALBUM</RefTableName>
       <RefKeyName>PRIMARY_KEY_3</RefKeyName>
@@ -334,10 +357,50 @@
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
     </foreign-key>
-    <foreign-key id="194" parent="170" name="FKDO7DY3NN7YNBFIAYIDA97S1PU">
+    <foreign-key id="198" parent="171" name="FKDO7DY3NN7YNBFIAYIDA97S1PU">
       <ColNames>ARTIST_ID</ColNames>
       <RefTableName>ARTIST</RefTableName>
       <RefKeyName>PRIMARY_KEY_7</RefKeyName>
+      <RefColNames>ID</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>restrict</OnUpdate>
+    </foreign-key>
+    <column id="199" parent="172" name="SONGS_ID">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="200" parent="172" name="AUTHORS_ID">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="201" parent="172" name="FK6QL4W4CAYKD27LU4A54RI8BIP_INDEX_B">
+      <ObjectId>26</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <SourceTextLength>97</SourceTextLength>
+      <ColNames>SONGS_ID</ColNames>
+      <AutoCreated>1</AutoCreated>
+    </index>
+    <index id="202" parent="172" name="FKS9OFO07CP1JXCFCKATGX26UBR_INDEX_B">
+      <ObjectId>24</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <SourceTextLength>99</SourceTextLength>
+      <ColNames>AUTHORS_ID</ColNames>
+      <AutoCreated>1</AutoCreated>
+    </index>
+    <foreign-key id="203" parent="172" name="FK6QL4W4CAYKD27LU4A54RI8BIP">
+      <ColNames>SONGS_ID</ColNames>
+      <RefTableName>SONG</RefTableName>
+      <RefKeyName>PRIMARY_KEY_2</RefKeyName>
+      <RefColNames>ID</RefColNames>
+      <OnDelete>restrict</OnDelete>
+      <OnUpdate>restrict</OnUpdate>
+    </foreign-key>
+    <foreign-key id="204" parent="172" name="FKS9OFO07CP1JXCFCKATGX26UBR">
+      <ColNames>AUTHORS_ID</ColNames>
+      <RefTableName>AUTHOR</RefTableName>
+      <RefKeyName>PRIMARY_KEY_73</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>restrict</OnDelete>
       <OnUpdate>restrict</OnUpdate>
