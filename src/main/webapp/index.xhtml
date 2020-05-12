@@ -11,28 +11,22 @@
         <ui:repeat value="#{artists.allArtists}" var="artist">
             <li><h:link value="#{artist.name}" outcome="artist?artistId=#{artist.id}" /></li>
         </ui:repeat>
-        <h:form>
-            Artist's name:
-            <h:inputText value="#{artists.artistToCreate.name}" required="true" />
-            Career start year:
-            <h:inputText value="#{artists.artistToCreate.year}" required="true" />
-            <h:commandButton value="Add new artist" action="#{artists.createArtist}" />
-        </h:form>
     </ol>
 
-    <h2>Songs:</h2>
-    <ol>
-        <ui:repeat value="#{songs.allSongs}" var="song">
-            <li><h:link value="#{song.name}"/></li>
-        </ui:repeat>
-    </ol>
+    Create artist
     <h:form>
-        name:
-        <h:inputText value="#{songs.songToCreate.name}" required="true" />
-        duration:
-        <h:inputText value="#{songs.songToCreate.duration}" required="true" />
-        <h:commandButton value="Add new song" action="#{songs.createSong}" />
+        Artist's name:
+        <h:inputText value="#{artists.artistToCreate.name}" required="true" />
+        Career start year:
+        <h:inputText value="#{artists.artistToCreate.year}" required="true" />
+        <h:commandButton value="Add new artist" action="#{artists.createArtist}" />
     </h:form>
 
+    <h3>Authors:</h3>
+    <ol>
+        <ui:repeat value="#{authors.allAuthors}" var="author">
+            <li><h:link value="#{author.name} #{author.lastName}" outcome="authorDetails?authorId=#{author.id}" /></li>
+        </ui:repeat>
+    </ol>
 </h:body>
 </html>

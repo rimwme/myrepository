@@ -42,4 +42,9 @@ public class Song implements Serializable {
     @ManyToMany
     @JoinTable(name = "SONG_AUTHOR")
     private List<Author> authors = new ArrayList<>();
+
+    public void addAuthor(Author author){
+        authors.add(author);
+        author.getSongs().add(this);
+    }
 }

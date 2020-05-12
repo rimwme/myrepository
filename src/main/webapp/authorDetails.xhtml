@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+>
+<h:head/>
+<h:body>
+   <h2>#{authors.author.name} #{authors.author.lastName} </h2>
+   Songs:
+   <ol>
+      <ui:repeat value="#{authors.author.songs}" var="song">
+         <li><h:link value="#{song.name}" outcome="songDetails?songId=#{song.id}" /></li>
+      </ui:repeat>
+   </ol>
+
+   <h:link outcome="index" value="Back to home page"/>
+</h:body>
+</html>

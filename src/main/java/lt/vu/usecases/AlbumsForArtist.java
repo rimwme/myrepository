@@ -39,7 +39,6 @@ public class AlbumsForArtist {
     }
 
     @Transactional
-    @LoggedInvocation
     public String createAlbum() {
         albumToCreate.setArtist(this.artist);
         albumsDAO.persist(albumToCreate);

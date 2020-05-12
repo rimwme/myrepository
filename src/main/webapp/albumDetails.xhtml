@@ -3,11 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core"
 >
 <h:head/>
 <h:body>
-    Album Details page
-    #{albums.album.name}
+    <h2>#{albums.album.name}</h2>
+    Release date: #{albums.album.releaseDate}
+    Songs:
     <ol>
         <ui:repeat value="#{albums.allSongs}" var="song">
             <li>
@@ -16,6 +19,18 @@
             </li>
         </ui:repeat>
     </ol>
+
+    <h2>Add new song to an album:</h2>
+
+    <h:form>
+        <h:inputText a:placeholder="name" value="#{songsForAlbum.songToCreate.name}" required="true" />
+        <h:inputText a:placeholder="duration" value="#{songsForAlbum.songToCreate.duration}" required="true" />
+        <h:commandButton value="Add new song" action="#{songsForAlbum.createSong}" >
+            <f:param name="albumId" value="#{songsForAlbum.album.id}" />
+        </h:commandButton>
+    </h:form>
+
+    <h:link outcome="artist?artistId=#{albums.album.artist.id}" value="Back to artist"/>
 
 </h:body>
 </html>

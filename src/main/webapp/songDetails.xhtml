@@ -3,9 +3,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://java.sun.com/jsf/core"
 >
 <h:head/>
 <h:body>
-    Song Details page
+    <h2>#{authorsForSongs.song.name}</h2>
+    <div>
+        Artist: #{authorsForSongs.song.artist.name}
+    </div>
+    <div>
+        Duration: #{authorsForSongs.song.duration}s
+    </div>
+    <div>
+        Album: #{authorsForSongs.song.album.name}
+    </div>
+
+    Authors:
+    <ol>
+        <ui:repeat value="#{authorsForSongs.song.authors}" var="author">
+            <li><h:link value="#{author.name} #{author.lastName}" outcome="authorDetails?authorId=#{author.id}" /></li>
+        </ui:repeat>
+    </ol>
+
+    Add author:
+    <h:form>
+        <h:inputText a:placeholder="name" value="#{authorsForSongs.authorToCreate.name}" required="true" />
+        <h:inputText a:placeholder="last name" value="#{authorsForSongs.authorToCreate.lastName}" required="true" />
+        <h:commandButton value="Add new author" action="#{authorsForSongs.createAuthor}" >
+            <f:param name="songId" value="#{authorsForSongs.song.id}" />
+        </h:commandButton>
+    </h:form>
+
+    <h:link outcome="albumDetails?albumId=#{authorsForSongs.song.album.id}" value="Back to album"/>
+
 </h:body>
 </html>

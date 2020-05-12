@@ -12,7 +12,8 @@ import java.util.List;
 
 @Entity
 @NamedQueries({
-        @NamedQuery(name = "Author.findAll", query = "select a from Author as a")
+        @NamedQuery(name = "Author.findAll", query = "select a from Author as a"),
+        @NamedQuery(name = "Author.findByName", query = "select a from Author as a where a.name like : name and a.lastName like: lastName")
 })
 @Table(name = "AUTHOR")
 @Getter

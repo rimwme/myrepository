@@ -13,7 +13,6 @@ import java.util.List;
 
 @Model
 public class Songs {
-    // artist -> add new album, add new song, albume pridedam esamas dainas,
     @Inject
     private SongsDAO songsDAO;
 
