@@ -28,12 +28,6 @@ public class Songs {
         loadAllSongs();
     }
 
-    @Transactional
-    public String createSong(){
-        this.songsDAO.persist(songToCreate);
-        return "index?faces-redirect=true";
-    }
-
     private void loadAllSongs(){
         this.allSongs = songsDAO.loadAll();
     }

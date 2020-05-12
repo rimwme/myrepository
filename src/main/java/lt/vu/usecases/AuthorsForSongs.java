@@ -41,27 +41,14 @@ public class AuthorsForSongs {
 
     @Transactional
     public String createAuthor() {
-       /* song.setAuthors();
-        List<Song> songs = authorToCreate.getSongs();
-        songs.add(song);
-        authorToCreate.setSongs(songs);
-        authorsDAO.persist(authorToCreate);*/
-
-       //Need to check if author already exists
-
-
         List<Author> auth = authorsDAO.findByName(authorToCreate.getName(), authorToCreate.getLastName());
 
-        System.out.println("-------------iiiiiiiii-------------iiiiiiii--------- " + auth);
         if(auth.isEmpty()){
             authorsDAO.persist(authorToCreate);
             song.addAuthor(authorToCreate);
         }else{
-            System.out.println("--------------------------------------- " + auth.get(0));
             song.addAuthor(auth.get(0));
         }
-
-
 
         return "songDetails?faces-redirect=true&songId=" + this.song.getId();
     }

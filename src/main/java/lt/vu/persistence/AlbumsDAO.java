@@ -16,11 +16,4 @@ public class AlbumsDAO {
 
     public Album findOne(Integer id) { return em.find(Album.class, id); }
 
-    public Album update(Album album){
-        return em.merge(album);
-    }
-
-    public List<Album> loadAll() {
-        return em.createNamedQuery("Album.findAll", Album.class).getResultList();
-    }
 }

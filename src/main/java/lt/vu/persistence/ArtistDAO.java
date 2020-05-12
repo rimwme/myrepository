@@ -17,10 +17,6 @@ public class ArtistDAO {
 
     public Artist findOne(Integer id) { return em.find(Artist.class, id); }
 
-    public Artist update(Artist artist){
-        return em.merge(artist);
-    }
-
     public List<Artist> loadAll() {
         return em.createNamedQuery("Artist.findAll", Artist.class).getResultList();
     }

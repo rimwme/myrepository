@@ -45,14 +45,4 @@ public class Albums {
     }
 
 
-    @Transactional
-    public String createSong(){
-        this.albumsDAO.persist(songToCreate);
-        return "index?faces-redirect=true";
-    }
-
-    private void loadAllSongs(){
-        this.allSongs = songsDAO.findByAlbum(album);
-    }
-
 }

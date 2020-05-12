@@ -2,7 +2,6 @@ package lt.vu.usecases;
 
 import lt.vu.entities.Album;
 import lt.vu.entities.Artist;
-import lt.vu.interceptors.LoggedInvocation;
 import lt.vu.persistence.AlbumsDAO;
 import lt.vu.persistence.ArtistDAO;
 

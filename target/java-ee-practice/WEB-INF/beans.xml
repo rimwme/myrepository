@@ -6,7 +6,4 @@
                       http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
         bean-discovery-mode="annotated">
 
-    <interceptors>
-        <class>lt.vu.interceptors.MethodLogger</class>
-    </interceptors>
 </beans>

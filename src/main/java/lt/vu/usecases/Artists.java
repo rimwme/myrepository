@@ -29,10 +29,6 @@ public class Artists {
     @PostConstruct
     public void init(){
         loadAllArtists();
-   /*     Map<String, String> requestParameters =
-                FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
-        Integer artistId = Integer.parseInt(requestParameters.get(""));
-*/
     }
 
     @Transactional
