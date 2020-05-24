@@ -9,6 +9,7 @@
 <h:body>
 
     <h2> Albums by #{albumsForArtist.artist.name} </h2>
+    Career started: #{albumsForArtist.artist.year}
     <ol>
         <ui:repeat value="#{albumsForArtist.artist.albums}" var="album">
             <li>

@@ -25,7 +25,7 @@
     <h3>Authors:</h3>
     <ol>
         <ui:repeat value="#{authors.allAuthors}" var="author">
-            <li><h:link value="#{author.name} #{author.lastName}" outcome="authorDetails?authorId=#{author.id}" /></li>
+            <li><h:link value="#{author.name} #{author.lastName} #{author.songs.size()}" outcome="authorDetails?authorId=#{author.id}" /></li>
         </ui:repeat>
     </ol>
 </h:body>

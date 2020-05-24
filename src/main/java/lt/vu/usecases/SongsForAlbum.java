@@ -3,6 +3,7 @@ package lt.vu.usecases;
 import lt.vu.entities.Album;
 import lt.vu.entities.Artist;
 import lt.vu.entities.Song;
+import lt.vu.interceptors.LoggedInvocation;
 import lt.vu.persistence.AlbumsDAO;
 import lt.vu.persistence.SongsDAO;
 
@@ -38,6 +39,7 @@ public class SongsForAlbum {
     }
 
     @Transactional
+    @LoggedInvocation
     public String createSong() {
         songToCreate.setArtist(this.album.getArtist());
         songToCreate.setAlbum(this.album);

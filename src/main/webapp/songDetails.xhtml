@@ -35,6 +35,14 @@
         </h:commandButton>
     </h:form>
 
+    <p>#{authorsForSongs.price}</p>
+    <p>#{downloadSong.getDownloadingStatus(authorsForSongs.song.id)}</p>
+    <h:form>
+        <h:commandButton value="Download song" action="#{downloadSong.downloadSong}">
+            <f:param name="songId" value="#{authorsForSongs.song.id}" />
+        </h:commandButton>
+    </h:form>
+
     <h:link outcome="albumDetails?albumId=#{authorsForSongs.song.album.id}" value="Back to album"/>
 
 </h:body>
