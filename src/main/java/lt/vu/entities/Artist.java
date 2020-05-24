@@ -36,6 +36,10 @@ public class Artist implements Serializable {
     @OneToMany(mappedBy = "artist")
     private List<Album> albums = new ArrayList<>();
 
+    @Version
+    @Column(name = "OPT_LOCK_VERSION")
+    private Integer version;
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -40,6 +40,10 @@ public class Song implements Serializable {
     @JoinColumn(name = "ARTIST_ID")
     private Artist artist;
 
+    @Version
+    @Column(name = "OPT_LOCK_VERSION")
+    private Integer version;
+
     @ManyToMany
     @JoinTable(name = "SONG_AUTHOR")
     private List<Author> authors = new ArrayList<>();
