@@ -28,5 +28,15 @@
 
     <h:link outcome="index" value="Back to home page"/>
 
+    <h2>Edit artist details:</h2>
+    <h:form>
+        <label>Name: <h:inputText value="#{albumsForArtist.nameForUpdate}" a:placeholder="#{albumsForArtist.artist.name}" required="true"/></label><br/>
+        <label>Year: <h:inputText value="#{albumsForArtist.yearForUpdate}" a:placeholder="#{albumsForArtist.artist.year}" required="true"/></label><br/>
+        <h:commandButton value="Update artist" action="#{albumsForArtist.updateArtist}">
+            <f:param name="artistId" value="#{albumsForArtist.artist.id}" />
+        </h:commandButton>
+        <h:outputText value="Failed to update, please try again" rendered="#{param['error'] == 'optimistic-lock-exception'}" />
+    </h:form>
+
 </h:body>
 </html>

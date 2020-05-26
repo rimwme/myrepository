@@ -59,6 +59,8 @@ public class ArtistsController {
             existingArtist.setName(artistData.getName());
             existingArtist.setYear(artistData.getYear());
 
+            artistDAO.update(existingArtist);
+            artistDAO.flush();
             return Response.ok().build();
         } catch (OptimisticLockException e) {
             return Response.status(Response.Status.CONFLICT).build();

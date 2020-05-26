@@ -20,4 +20,10 @@ public class ArtistDAO {
     public List<Artist> loadAll() {
         return em.createNamedQuery("Artist.findAll", Artist.class).getResultList();
     }
+
+    public Artist update(Artist artist) {
+        return em.merge(artist);
+    }
+
+    public void flush(){ em.flush();}
 }

@@ -10,6 +10,7 @@ import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
+import javax.persistence.OptimisticLockException;
 import javax.transaction.Transactional;
 import java.util.Map;
 
@@ -30,6 +31,14 @@ public class AlbumsForArtist {
     @lombok.Setter
     private Album albumToCreate = new Album();
 
+    @lombok.Getter
+    @lombok.Setter
+    private String nameForUpdate;
+
+    @lombok.Getter
+    @lombok.Setter
+    private Integer yearForUpdate;
+
     @PostConstruct
     public void init() {
         Map<String, String> requestParameters =
@@ -44,5 +53,23 @@ public class AlbumsForArtist {
         albumToCreate.setArtist(this.artist);
         albumsDAO.persist(albumToCreate);
         return "artist?faces-redirect=true&artistId=" + this.artist.getId();
+    }
+
+    @Transactional
+    @LoggedInvocation
+    public String updateArtist() throws InterruptedException {
+        artist.setName(nameForUpdate);
+        artist.setYear(yearForUpdate);
+
+        try {
+            Thread.sleep(5000);
+            artistDAO.update(artist);
+            artistDAO.flush();
+        } catch ( OptimisticLockException e) {
+            return "artist?faces-redirect=true&artistId=" + artist.getId() + "&error=optimistic-lock-exception";
+        }
+
+
+        return "artist?faces-redirect=true&artistId=" + artist.getId();
     }
 }
